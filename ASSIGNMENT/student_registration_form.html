@@ -30,11 +30,11 @@
           </tr>
           <tr>
             <td><label for="phone">Phone Number:</label></td>
-            <td><input type="text" /></td>
+            <td><input type="text" name="phone" /></td>
           </tr>
           <tr>
             <td><label for="DOB">Date of Birth:</label></td>
-            <td><input type="date" /></td>
+            <td><input type="date" name="DOB" /></td>
           </tr>
           <tr>
             <td><label for="">Gender:</label></td>
@@ -53,10 +53,10 @@
             <td><label for="">Select Course:</label></td>
             <td>
               <select name="course" id="">
-                <option value="" selected disabled >--Select a Course--</option>
-                <option value="">JAVA</option>
-                <option value="">Python</option>
-                <option value="">SQL</option>
+                <option value="" selected disabled>--Select a Course--</option>
+                <option value="Java">JAVA</option>
+                <option value="Python">Python</option>
+                <option value="SQL">SQL</option>
               </select>
             </td>
           </tr>
@@ -64,7 +64,13 @@
           <tr>
             <td><label for="skills">Skills:</label></td>
             <td>
-              <input type="text" name="skills" list="skills" placeholder="Select or type a skill" multiple/>
+              <input
+                type="text"
+                name="skills"
+                list="skills"
+                placeholder="Select or type a skill"
+                multiple
+              />
             </td>
             <datalist id="skills">
               <option value="communication">communication</option>
@@ -85,28 +91,28 @@
         <table>
           <tr>
             <td><label for="username">Username:</label></td>
-            <td><input type="text" name="username"/></td>
+            <td><input type="text" name="username" /></td>
           </tr>
           <tr>
             <td><label for="password">Password:</label></td>
-            <td><input type="password" name="password"/></td>
+            <td><input type="password" name="password" /></td>
           </tr>
           <tr>
             <td><label for="confirmpassword">Confirm Password:</label></td>
-            <td><input type="password" name="confirmpassword"/></td>
+            <td><input type="password" name="confirmpassword" /></td>
           </tr>
         </table>
       </fieldset>
 
       <fieldset>
         <legend>Declaration</legend>
-        <input type="checkbox" name="tandc" required>
+        <input type="checkbox" name="tandc" required />
         <label for="tandc">I agree the Terms & Condition</label>
-        <br>
+        <br />
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="button" value="Register"> 
-        <input type="reset" value="Reset"> 
+        <input type="submit" value="Register" />
+        <input type="reset" value="Reset" />
       </fieldset>
     </form>
   </body>
