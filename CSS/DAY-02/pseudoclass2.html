@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selectors 2</title>
+</head>
+
+<style>
+
+    input:enabled{
+        background-color: yellowgreen;
+    }
+
+    input:disabled{
+        background-color: brown;
+        color: black;
+    }
+
+    
+    input:checked{
+        accent-color: red;
+    }
+
+    #burger, #pizza{
+        accent-color: green;
+    }
+
+
+    #submit:hover{
+        background-color: brown;
+        color: white;
+    }
+    #submit{
+        background-color: khaki;
+        color: black;
+    }
+
+</style>
+
+<body>
+
+    <label for="">Enabled Input</label>
+    <input type="text">
+    <br>
+    <br>
+
+    <label for="">Disabled Input</label>
+    <input type="text" disabled value="PAN6633">
+    <br>
+    <br>
+
+    <label for="">Food:</label>
+    <br>
+    <input type="checkbox" name="" id="burger">
+    <label for="burger">Burger</label>
+
+    <input type="checkbox" name="" id="pizza">
+    <label for="pizza">Pizza</label>
+
+    <input type="checkbox" name="" id="coke" checked>
+    <label for="coke">Coke</label>
+
+    <br><br>
+
+    <label for="tandc">
+        <input type="checkbox" name="" id="tandc" checked>
+        Terms and Conditions are Applied 
+    </label>
+
+    <br><br>
+
+    <input type="submit" value="Next" id="submit">
+
+    
+
+    
+</body>
+</html>
