@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Selectors</title>
+</head>
+
+<style>
+    #para1::first-letter{
+        color: brown;
+        font-size: 20px;
+    }
+
+    #para2::first-line{
+        color: brown;
+    }
+
+    #para2::after{
+        content: "END";
+        color: blue;
+        font-size: 20px;
+    }
+
+    #para2::before{
+        content: "START";
+        color: blue;
+        font-size: 20px;
+    }
+
+    #para2::selection{
+        color: black;
+        background-color: khaki;
+    }
+
+    input::placeholder{
+        color: brown;
+    }
+
+    input{
+        caret-color: indigo;
+    }
+
+
+</style>
+
+<body>
+
+    <p id="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consequuntur?
+    </p>
+
+    <hr>
+
+    <p id="para2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia animi deleniti ea omnis nesciunt error hic consequuntur repudiandae! Pariatur laboriosam blanditiis distinctio reiciendis placeat ad, deserunt eum. Rerum, porro architecto?
+        Odit fugiat deserunt impedit id accusantium velit perspiciatis qui nulla vitae, eveniet voluptate assumenda temporibus? Provident tempore laudantium alias recusandae laboriosam reprehenderit aspernatur dicta maiores aliquam nam laborum, ipsam id?
+        Quae aliquid obcaecati quod ducimus sint laboriosam natus quasi porro exercitationem, quibusdam a eum reiciendis iste alias facilis corporis temporibus assumenda voluptatibus? Incidunt quis corporis soluta quod consequuntur, sint qui.
+        Perferendis iste deserunt, ipsum in exercitationem consequatur, autem dolorum voluptates similique blanditiis tempora dolores, aliquam fugiat ratione. Ad, perferendis dolores necessitatibus neque animi quaerat sit iste expedita distinctio, veritatis quis.
+    </p>
+
+    <hr>
+
+    <input type="text" placeholder="Enter Your Text Here....">
+
+
+
+
+
+
+    
+</body>
+</html>
