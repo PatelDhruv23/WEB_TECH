@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Properties</title>
+</head>
+
+<style>
+
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .box{
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+    }
+
+    #box1{
+        border: 2px solid red;
+    }
+
+    #box2{
+        border-left: 2px solid blue;
+        border-bottom: 2px groove blue;
+    }
+
+    #box3{
+        border-left: 2px solid green;
+        border-right: 5px double green;
+        border-top: 2px dotted green;
+        border-bottom: 2px dashed green;
+
+    }
+
+</style>
+
+<body>
+
+    <div class="box" id="box1">Box1</div>
+    <div class="box" id="box2">Box2</div>
+    <div class="box" id="box3">Box3</div>
+    
+</body>
+</html>
