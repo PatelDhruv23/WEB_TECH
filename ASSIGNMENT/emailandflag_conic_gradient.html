@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email using conic gradient</title>
+</head>
+
+<style>
+    .box{
+        width: 150px;
+        height: 150px;
+        border: 2px solid red;
+        margin: 30px auto;
+        text-align: center;
+        line-height: 150px;
+    }
+
+    #box1{
+        background-image: conic-gradient(red 0deg 45deg, white 45deg 315deg, red 315deg);
+
+    }
+
+    #box2{
+        background-image: conic-gradient(red 0deg 90deg, green 90deg 225deg, black 225deg 315deg, red 315deg);
+    }
+
+
+</style>
+
+<body>
+
+    <div class="box" id="box1">Email</div>
+    <div class="box" id="box2"></div>
+    
+</body>
+</html>
