@@ -14,8 +14,8 @@
 
         #headsection {
             width: 100%;
-            height: 90px;
-            background-image: url(/HTML/assets/cars_task/7a4ff0dce258e4687b3cc77ca65eb786.jpg);
+            height: 120px;
+            background-image: url(/HTML/assets/cars_task/f1head.webp);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -41,6 +41,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-color: rgba(0,0,0,0.5);
         }
 
         #box1 {
@@ -66,6 +67,10 @@
         }
         #box8 {
             background-image: url(/HTML/assets/cars_task/car2.jpg);
+        }
+
+        .box:hover{
+            background-blend-mode: darken;
         }
 
         .rent {
@@ -104,14 +109,6 @@
             color: transparent;
         }
 
-        .content:hover {
-            background-color: rgba(0, 0, 0, 0.3);
-        }
-
-        .content > p:hover {
-            color: white;
-        }
-
         .price {
             color: transparent;
             background-color: transparent;
@@ -119,10 +116,33 @@
             margin-left: 25%;
         }
 
-        .price:hover {
+        .content:hover{
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .content:hover .para {
+            color: white;
+
+        }
+
+        .content:hover .price{
+            color: white;
             background-color: yellowgreen;
             border-radius: 4px;
         }
+
+
+
+        /* .content > p:hover {
+            color: white;
+        } */
+
+        
+
+        /* .price:hover {
+            background-color: yellowgreen;
+            border-radius: 4px;
+        } */
     </style>
 
     <body>
