@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Position</title>
+
+    <style>
+
+        #main-box{
+            width: 600px;
+            height: 500px;
+            border: 2px solid black;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+        }
+
+        #box1{
+            background-color: brown;
+            position: static;
+        }
+
+        #box2{
+            background-color: blue;
+            position: relative;
+            bottom: 50px;
+            left: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Relative Position in CSS</h1>
+
+    <div id="main-box">
+        <div class="box" id="box1">Box-1</div>
+        <div class="box" id="box2">Box-2</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    * {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: "Noto Sans", sans-serif;
+    }
+
+    #sect {
+        width: 85%;
+        height: 208px;
+        margin: 50px auto;
+        border-radius: 8px;
+        position: relative;
+    }
+
+    #bg {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+        background-image: url("/HTML/assets/starbucks/bg.png");
+        background-size: cover;
+        position: absolute;
+    }
+
+    #coffee {
+        height: 90%;
+        width: 150px;
+        background-image: url("/HTML/assets/starbucks/coffee.png");
+        position: absolute;
+        background-size: contain;
+        background-position: left;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .para {
+        width: 700px;
+        position: absolute;
+        left: 150px;
+        top: 10px;
+        color: white;
+    }
+
+    #para2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #para1,
+    #para3 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #tc {
+        position: absolute;
+        right: 20px;
+        color: white;
+        font-size: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        top: 10px;
+    }
+
+    #know-more-btn button {
+        width: 200px;
+        height: 49px;
+        border: none;
+        background-color: #00754a;
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        border-radius: 30px;
+        
+    }
+
+    #btn-right{
+        width: 40px;
+        height: 40px;
+        background-image: url(/HTML/assets/starbucks/right.png);
+        background-size: 25px ;
+        background-color: white;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        right: -20px;
+        top: calc(50% - 20px);
+        border: none;
+        border-radius: 50%;
+    }
+
+    #btn-left{
+        width: 40px;
+        height: 40px;
+        background-image: url(/HTML/assets/starbucks/left.png);
+        background-size: 25px ;
+        background-color: white;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: -20px;
+        top: calc(50% - 20px);
+        border: none;
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+
+    <section id="sect">
+
+        <div id="bg"></div>
+        <div id="coffee"></div>
+        <div class="para">
+            <p id="para1">Starbucks</p>
+            <p id="para2">Beverage Subscription</p>
+            <p id="para3">Starbucks Subscription is Back! Sip Your Favourites for Less. Tap for Details. T&C Apply.</p>
+        </div>
+        <div id="tc">*T&C Apply</div>
+        <div id="know-more-btn">
+            <button type="button">
+                Know More
+            </button>
+        </div>
+        <div id="btn-right"></div>
+        <div id="btn-left"></div>
+
+    </section>
+
+
+
+</body>
+
+</html>
