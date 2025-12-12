@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path</title>
+</head>
+
+<style>
+
+    #box1{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        clip-path: polygon(50% 0%,100% 30%, 100% 100%, 0% 100%,0% 30%);
+    }
+
+    #box2{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+
+    }
+
+</style>
+
+<body>
+
+    <h3>using clip-path property</h3>
+    <div id="box1"></div>
+
+    <h3>Using Clip path Generator</h3>
+    <div id="box2"></div>
+
+</body>
+</html>

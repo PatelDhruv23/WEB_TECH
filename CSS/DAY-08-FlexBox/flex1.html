@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box 1</title>
+</head>
+
+<style>
+    .parent{
+        width: 800px;
+        height: 300px;
+        background-color: brown;
+        display: flex;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: bisque;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #parent1{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #parent2{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #parent3{
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #parent4{
+        justify-content: space-evenly;
+    }
+
+    #parent5{
+        justify-content: space-around;
+    }
+
+    #parent6{
+        justify-content: space-between;
+    }
+
+
+
+</style>
+<body>
+
+    <h1>Flex Box in CSS</h1>
+    <h2>justify-content: Flex-start</h2>
+    <h2>align-items: Flex-start</h2>
+    <h5>Default</h5>
+    <div class="parent" id="parent1">
+        <div class="box" id="box1">Child-1 </div>
+        <div class="box" id="box2">Child-2 </div>
+        <div class="box" id="box3">Child-3 </div>
+        <div class="box" id="box4">Child-4 </div>
+        <div class="box" id="box5">Child-5 </div>
+    </div>
+
+    <h2>justify-content: center</h2>
+    <h2>align-items: center</h2>
+    <div class="parent" id="parent2">
+        <div class="box" id="box1">Child-1 </div>
+        <div class="box" id="box2">Child-2 </div>
+        <div class="box" id="box3">Child-3 </div>
+        <div class="box" id="box4">Child-4 </div>
+        <div class="box" id="box5">Child-5 </div>
+    </div>
+
+    <h2>justify-content: Flex-end</h2>
+    <h2>align-items: Flex-end</h2>
+    <div class="parent" id="parent3">
+        <div class="box" id="box1">Child-1 </div>
+        <div class="box" id="box2">Child-2 </div>
+        <div class="box" id="box3">Child-3 </div>
+        <div class="box" id="box4">Child-4 </div>
+        <div class="box" id="box5">Child-5 </div>
+    </div>
+
+    <h2>justify-content: space-evenly</h2>
+    <div class="parent" id="parent4">
+        <div class="box" id="box1">Child-1 </div>
+        <div class="box" id="box2">Child-2 </div>
+        <div class="box" id="box3">Child-3 </div>
+        <div class="box" id="box4">Child-4 </div>
+        <div class="box" id="box5">Child-5 </div>
+    </div>
+
+    <h2>justify-content: space-around</h2>
+    <div class="parent" id="parent5">
+        <div class="box" id="box1">Child-1 </div>
+        <div class="box" id="box2">Child-2 </div>
+        <div class="box" id="box3">Child-3 </div>
+        <div class="box" id="box4">Child-4 </div>
+        <div class="box" id="box5">Child-5 </div>
+    </div>
+
+    <h2>justify-content: space-between</h2>
+    <div class="parent" id="parent6">
+        <div class="box" id="box1">Child-1 </div>
+        <div class="box" id="box2">Child-2 </div>
+        <div class="box" id="box3">Child-3 </div>
+        <div class="box" id="box4">Child-4 </div>
+        <div class="box" id="box5">Child-5 </div>
+    </div>
+    
+</body>
+</html>
