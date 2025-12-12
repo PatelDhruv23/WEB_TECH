@@ -106,6 +106,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        margin-left: 50px;
         
     }
 
@@ -113,16 +114,18 @@
         height: 50px;
         width: 200px;
         margin-top: 50px;
-        background-color: rgb(206, 90, 27);
+        background-color: #111111;
         color: white;
         cursor: pointer;
         font-family: "Archivo Black", sans-serif;
-        border: none;
+        border: 1px solid rgb(255, 89, 0);
         border-radius: 50px;
     }
 
     #know-more-btn:hover{
-        background-color: rgb(238, 110, 41);
+        background-color: rgb(255, 89, 0);
+        box-shadow: 1px 1px 50px rgb(206, 90, 27, 0.3);
+
     }
 
     #data{
@@ -135,7 +138,44 @@
         width: 100%;
         height: 90px;
         background-color: black;
+        display: flex;
+        justify-content: center;
+        
     }
+
+    #copyright{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #copyright p{
+        color: rgba(255, 255, 255, 0.562);
+    }
+
+    #svg{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .foot-svg{
+        width: 25px;
+        height: 25px; 
+        padding: 5px;  
+    }
+    .foot-svg:hover{
+        border-radius: 10px;
+        background-color: #111111;
+        box-shadow: 1px 1px 10px rgb(206, 90, 27);
+        
+    }
+
+
 
 </style>
 
@@ -143,7 +183,7 @@
 
     <header>
         <aside>
-            <img src="/HTML/assets/imgi_2_logo-orange.png" alt="">
+            <img src="/HTML/assets/orange_technolabs/imgi_2_logo-orange.png" alt="">
         </aside>
         <nav>
             <ul>
@@ -175,6 +215,27 @@
     </section>
 
     <footer>
+
+        <div id="copyright">
+            <p>Copyrights by Orange Technolab © 2022</p>
+        </div>
+
+        <div id="svg">
+
+        <a href="">
+            <img src="/HTML/assets/orange_technolabs/email.png" alt="" class="foot-svg">
+        </a>
+        <a href="">
+            <img src="/HTML/assets/orange_technolabs/instagram-white-icon.png" alt="" class="foot-svg">
+        </a>
+        <a href="">
+            <img src="/HTML/assets/orange_technolabs/phone-call.png" alt="" class="foot-svg">
+        </a>
+        <a href="">
+            <img src="/HTML/assets/orange_technolabs/location.png" alt="" class="foot-svg">
+        </a>
+
+        </div>
 
     </footer>
 
