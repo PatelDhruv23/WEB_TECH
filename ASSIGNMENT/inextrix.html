@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inextrix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    * {
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mainsection {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #head-para {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 2px;
+    }
+
+    #head-para h1 {
+        font-size: 32px;
+        font-weight: 600;
+        color: #1D1A4E;
+    }
+
+    #head-para p {
+        font-size: 16px;
+    }
+
+    #parent-box {
+        margin: 20px auto;
+        padding: 20px;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    .box {
+        width: 45%;
+        height: 50%;
+        padding: 0px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(215, 215, 215, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .box h2 {
+        font-size: 32px;
+        font-weight: 600;
+        margin: 8px;
+        color: #1D1A4E;
+    }
+
+    .box p {
+        font-size: 16px;
+        margin: 8px;
+
+    }
+
+    .img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .imgbox {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        margin-bottom: 2px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-origin: border-box;
+    }
+
+    #imgbox1 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/freeswitch-1-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox2 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/asterisk-1-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox3 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/opensips-2-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox4 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/kamailio-2-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox5 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/webrtc-2-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox6 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/android-1-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox7 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/ios-1-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox8 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/react-native-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox9 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/flutter-1-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox10 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/progresiv-web-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox11 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/react-native-2.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox12 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/angular-2-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox13 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/node-js-2.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox14 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/laravel-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox15 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/js-1-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox16 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/Jenkins-1-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox17 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/docker-1-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox18 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/git-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox19 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/ansible-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgbox20 {
+        background-image: url(https://i0.wp.com/inextrix.com/wp-content/uploads/2025/10/kubernetes-1-1.webp?fit=80%2C80&ssl=1);
+    }
+
+    #imgcap-container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+    .imgcap{
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        margin: auto;
+    }
+</style>
+
+<body>
+
+    <section id="main-section">
+        <div id="head-para">
+            <h1>Our Offerings</h1>
+            <p>Our subject matter experts and technical specialists ensure to give you the benefit of transformative</p>
+            <p>technologies, impressive scale, and supersonic speed.</p>
+        </div>
+
+        <div id="parent-box">
+            <div class="box" id="box1">
+                <h2>VoIP Development</h2>
+                <p>Quality communication propels ambitions and growth in organizations. We build sustainable, scalable,
+                    and brilliant real time communication tools that match your vision and business goals with our
+                    tailored VoIP development services. </p>
+                <div class="img">
+                    <div class="imgbox" id="imgbox1"></div>
+                    <div class="imgbox" id="imgbox2"></div>
+                    <div class="imgbox" id="imgbox3"></div>
+                    <div class="imgbox" id="imgbox4"></div>
+                    <div class="imgbox" id="imgbox5"></div>
+                </div>
+
+                <div id="imgcap-container">
+                    <div class="imgcap" id="imgcap1">Freeswitch</div>
+                    <div class="imgcap" id="imgcap2">Asterick</div>
+                    <div class="imgcap" id="imgcap3">Opensips</div>
+                    <div class="imgcap" id="imgcap4">Kamailio</div>
+                    <div class="imgcap" id="imgcap5">Webrtc</div>
+                </div>
+            </div>
+            <div class="box" id="box2">
+                <h2>Mobile App Development</h2>
+                <p>Extend your reach and clientele with highly engaging mobile applications that fuel up returns and business adaptability. Our native and cross platform mobile app development transforms dreams into amplified revenue generation. </p>
+                <div class="img">
+                    <div class="imgbox" id="imgbox6"></div>
+                    <div class="imgbox" id="imgbox7"></div>
+                    <div class="imgbox" id="imgbox8"></div>
+                    <div class="imgbox" id="imgbox9"></div>
+                    <div class="imgbox" id="imgbox10"></div>
+                </div>
+                <div id="imgcap-container">
+                    <div class="imgcap" id="imgcap1">Android</div>
+                    <div class="imgcap" id="imgcap2">IOS</div>
+                    <div class="imgcap" id="imgcap3">React Native</div>
+                    <div class="imgcap" id="imgcap4">Flutter</div>
+                    <div class="imgcap" id="imgcap5">Progessive Web</div>
+                </div>
+            </div>
+
+            <div class="box" id="box3">
+                <h2>Web Development</h2>
+                <p>Reduce bounce rates, increase navigation, and improve returning visitors. Bring out the best for your digital presence with an enchanting web app, website, and web products built by the industry’s leading web development company.</p>
+                <div class="img">
+                    <div class="imgbox" id="imgbox11"></div>
+                    <div class="imgbox" id="imgbox12"></div>
+                    <div class="imgbox" id="imgbox13"></div>
+                    <div class="imgbox" id="imgbox14"></div>
+                    <div class="imgbox" id="imgbox15"></div>
+                </div>
+                <div id="imgcap-container">
+                    <div class="imgcap" id="imgcap1">React</div>
+                    <div class="imgcap" id="imgcap2">Angular</div>
+                    <div class="imgcap" id="imgcap3">node.js</div>
+                    <div class="imgcap" id="imgcap4">Laravel</div>
+                    <div class="imgcap" id="imgcap5">Javascript</div>
+                </div>
+            </div>
+
+            <div class="box" id="box4">
+                <h2>DevOps Service</h2>
+                <p>Propel your business scale by harmonizing development and operational jobs to build the best quality products and solutions within the shortest time and gain a competitive advantage with our strategic and outstanding DevOps services. </p>
+                <div class="img">
+                    <div class="imgbox" id="imgbox16"></div>
+                    <div class="imgbox" id="imgbox17"></div>
+                    <div class="imgbox" id="imgbox18"></div>
+                    <div class="imgbox" id="imgbox19"></div>
+                    <div class="imgbox" id="imgbox20"></div>
+                </div>
+                <div id="imgcap-container">
+                    <div class="imgcap" id="imgcap1">Jenkins</div>
+                    <div class="imgcap" id="imgcap2">Docker</div>
+                    <div class="imgcap" id="imgcap3">Git</div>
+                    <div class="imgcap" id="imgcap4">Ansible</div>
+                    <div class="imgcap" id="imgcap5">Kubernetes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

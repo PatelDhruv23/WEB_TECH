@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Grow</title>
+</head>
+
+<style>
+    .parent{
+        width: 800px;
+        height: 200px;
+        background-color: beige;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        border: 2px solid black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #box3{
+        flex-grow: 3;
+        flex-shrink: 3;
+    }
+</style>
+<body>
+    
+    <h1>Flex-Grow child property in Flex Box</h1>
+
+    <div class="parent">
+        <div class="box" id="box1">Box-1</div>
+        <div class="box" id="box2">Box-2</div>
+        <div class="box" id="box3">Box-3</div>
+        <div class="box" id="box4">Box-4</div>
+        <div class="box" id="box5">Box-5</div>
+    </div>
+
+
+</body>
+</html>
