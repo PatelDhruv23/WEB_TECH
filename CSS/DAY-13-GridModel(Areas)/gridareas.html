@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas 1</title>
+</head>
+<style>
+
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600
+    }
+
+    .parent{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(37, 36, 36);
+        display: grid;
+        padding: 20px;
+        gap: 5px;
+        grid-template-areas: "head head head"
+                             "side sect sect"
+                             "side main main"
+                             "foot foot foot";
+
+    }
+
+    .grid-item{
+        background-color: brown;
+        border: 2px solid wheat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    #grid-item1{
+        grid-area: head;
+    }
+    #grid-item2{
+        grid-area: side;
+    }
+    #grid-item3{
+        grid-area: sect;
+    }
+    #grid-item4{
+        grid-area: main;
+    }
+    #grid-item5{
+        grid-area: foot;
+    }
+
+
+
+</style>
+<body>
+
+    <div class="parent">
+        <div class="grid-item" id="grid-item1">HEADER</div>
+        <div class="grid-item" id="grid-item2">ASIDE</div>
+        <div class="grid-item" id="grid-item3">SECTION</div>
+        <div class="grid-item" id="grid-item4">MAIN</div>
+        <div class="grid-item" id="grid-item5">FOOTER</div>
+    </div>
+    
+</body>
+</html>

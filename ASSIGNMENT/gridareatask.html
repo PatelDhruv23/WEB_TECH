@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 600;
+        box-sizing: border-box;
+    }
+
+    #mainsection{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 20px;
+        background-color: rgb(27, 26, 26);
+    }
+
+    #left-sect{
+        margin-right: 20px;
+        padding-top: 25vh;
+        padding-bottom: 25vh;
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .left-content{
+        width: 85%;
+        height: 95%;
+        margin: auto;
+        border-radius: 10px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: white;
+
+        box-shadow: 5px 5px rgba(60, 214, 241, 0.603);
+    }
+
+    .left-content h1{
+        font-size: 42px;
+        font-weight: 800;
+    }
+
+    .left-content p{
+        font-weight: 100;
+    }
+
+    #right-sect{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parent{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        padding: 20px;
+        gap: 5px;
+        grid-template-areas: "mountain mountain ocean ocean"
+                             "mountain mountain ocean ocean"
+                             "waterfall island hills beach"
+                             "waterfall island forest forest"
+                             "waterfall rain forest forest"
+                             "desert volcano iceberg land";
+    }
+
+    .grid-item{
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #grid-item1{
+        grid-area: mountain;
+        background-image: url(https://i.pinimg.com/1200x/40/c5/5b/40c55b9592d61cd56df9f408c3d54a2b.jpg);
+    }
+    #grid-item2{
+        grid-area: ocean;
+        background-image: url(https://i.pinimg.com/736x/8e/61/4f/8e614f55fdcd3d61ff566a978aaed650.jpg);
+    }
+    #grid-item3{
+        grid-area: waterfall;
+        background-image: url(https://i.pinimg.com/736x/47/e8/fb/47e8fbb4846b9a11ee78eb318afd81f8.jpg);
+    }
+    #grid-item4{
+        grid-area: island;
+        background-image: url(https://i.pinimg.com/1200x/ce/fd/9a/cefd9a3ecb8f2b35e8081c0509ea7b79.jpg);
+    }
+    #grid-item5{
+        grid-area: hills;
+        background-image: url(https://i.pinimg.com/736x/dc/e9/0a/dce90a31c06648bee95b721d6a9c7d89.jpg);
+    }
+    #grid-item6{
+        grid-area: beach;
+        background-image: url(https://i.pinimg.com/736x/03/ea/ac/03eaacc5da0e36d8aaee1dfe60a23309.jpg);
+    }
+    #grid-item7{
+        grid-area: rain;
+        background-image: url(https://i.pinimg.com/736x/9c/0e/40/9c0e408ab441165a0f3bc648ac049f86.jpg);
+    }
+    #grid-item8{
+        grid-area: forest;
+        background-image: url(https://i.pinimg.com/1200x/d2/bc/0a/d2bc0abdb197a5f3cd2466ba12922b03.jpg);
+    }
+    #grid-item9{
+        grid-area: desert;
+        background-image: url(https://i.pinimg.com/1200x/9e/35/e9/9e35e983fe70f4c3a1e5dbe22172a4da.jpg);
+    }
+    #grid-item10{
+        grid-area: volcano;
+        background-image: url(https://i.pinimg.com/736x/2b/21/3b/2b213b23df417017321be72595e11a9f.jpg);
+    }
+    #grid-item11{
+        grid-area: iceberg;
+        background-image: url(https://i.pinimg.com/736x/4a/ed/7a/4aed7aec2f8ae26f8d23fac0d8fa67e0.jpg);
+    }
+    #grid-item12{
+        grid-area: land;
+        background-image: url(https://i.pinimg.com/736x/bc/1c/c2/bc1cc23d3a8684ffd33b2de5e33e5a37.jpg);
+    }
+    
+
+</style>
+
+<body>
+
+    <section id="mainsection">
+
+        <section id="left-sect">
+            <div class="left-content">
+
+                <h1>Nature's Gallery</h1>
+                <p>🍁Everything in the word is beautiful</p>
+                <p>🍁You just need to look closer</p>
+                <p>🍁Capture the moment 📸</p>
+                <br><br><br><br><br>
+                <p>Follow for more -> <i>@natures-gallery</i></p>
+
+            </div>
+        </section>
+
+        <section id="right-sect">
+
+            <div class="parent">
+                <div class="grid-item" id="grid-item1">Mountain</div>
+                <div class="grid-item" id="grid-item2">Oceans</div>
+                <div class="grid-item" id="grid-item3">Waterfalls</div>
+                <div class="grid-item" id="grid-item4">Island</div>
+                <div class="grid-item" id="grid-item5">Hills</div>
+                <div class="grid-item" id="grid-item6">Beach</div>
+                <div class="grid-item" id="grid-item7">Rain</div>
+                <div class="grid-item" id="grid-item8">Forest</div>
+                <div class="grid-item" id="grid-item9">Desert</div>
+                <div class="grid-item" id="grid-item10">Volcano</div>
+                <div class="grid-item" id="grid-item11">Iceberg</div>
+                <div class="grid-item" id="grid-item12">Land</div>
+            </div>
+
+        </section>
+    </section>
+    
+</body>
+</html>
