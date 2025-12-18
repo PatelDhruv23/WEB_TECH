@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid1</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .parent{
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        background-color: navy;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .grid-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        background-color: aliceblue;
+    }
+
+    #grid-item1{
+        grid-column: 1/4;
+    }
+
+    #grid-item2{
+        grid-row: 2/4;
+    }
+
+    #grid-item4{
+        grid-column: 3;
+        grid-row: 2/4;
+    }
+
+    #grid-item6{
+        grid-column: 1/4;
+    }
+
+</style>
+
+<body>
+
+    <div class="parent">
+        <div class="grid-item" id="grid-item1">Header</div>
+        <div class="grid-item" id="grid-item2">Aside 1</div>
+        <div class="grid-item" id="grid-item3">Section</div>
+        <div class="grid-item" id="grid-item4">Aside 2</div>
+        <div class="grid-item" id="grid-item5">Main</div>
+        <div class="grid-item" id="grid-item6">Footer</div>
+    </div>
+    
+</body>
+</html>
