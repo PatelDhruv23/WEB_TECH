@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate</title>
+</head>
+
+<style>
+
+    .parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        color: wheat;
+        border-radius: 10px;
+        box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.7s ease-in-out;
+        cursor: pointer;
+    }
+
+    #box1:hover{
+        transform:rotate(45deg);
+        background-color: #455abd;
+    }
+    #box2:hover{
+        transform: rotateX(180deg);
+        background-color: #455abd;
+    }
+    #box3:hover{
+        transform: rotateY(180deg);
+        background-color: #455abd;
+    }
+
+
+</style>
+
+<body>
+    <h1>Rotate Property in CSS</h1>
+    <div class="parent">
+        <div class="box" id="box1">Rotate Z </div>
+        <div class="box" id="box2">Rotate X</div>
+        <div class="box" id="box3">Rotate Y</div>
+    </div>
+</body>
+</html>
