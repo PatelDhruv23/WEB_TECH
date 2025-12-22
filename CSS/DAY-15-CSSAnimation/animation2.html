@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 2</title>
+</head>
+
+<style>
+
+    .box{
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        border-radius: 50%;
+        animation-name: colorWheel;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        /* animation: name duration timing-function iteration-count fill-mode */
+    }
+
+    @keyframes colorWheel {
+        0%{
+            background-color: violet;
+        }
+        15%{
+            background-color: indigo;
+        }
+        30%{
+            background-color: blue;
+        }
+        45%{
+            background-color: green;
+        }
+        60%{
+            background-color: yellow;
+        }
+        75%{
+            background-color: orange;
+        }
+        100%{
+            background-color: red;
+        }
+
+    }
+
+
+</style>
+
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>

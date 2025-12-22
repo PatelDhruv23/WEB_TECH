@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth-Moon</title>
+</head>
+
+<style>
+
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        background-color: black;
+    }
+
+    h1{
+        text-align: center;
+        color: whitesmoke;
+        margin: 20px;
+    }
+
+    .earth{
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        margin: 50px auto;
+        background-image: url(https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 115%;
+
+        animation: rotateEarth 5s linear infinite;
+    }
+
+    @keyframes rotateEarth {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+</style>
+
+<body>
+
+    <h1>
+        Earth Rotating Demo by Using Animation
+    </h1>
+
+    <div class="earth"></div>
+    
+</body>
+</html>

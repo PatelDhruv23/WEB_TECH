@@ -1,0 +1,114 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth-Moon</title>
+</head>
+
+<style>
+
+    body{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        background-image: url(https://img.freepik.com/premium-photo/stars-galaxy-outer-space-sky-night-universe-black-starry-background-shiny-starfield_146539-338.jpg?semt=ais_hybrid&w=740&q=80);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1{
+        text-align: center;
+        color: whitesmoke;
+        margin: 20px;
+    }
+
+    .orbit{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .earth{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        margin: 200px auto;
+        background-image: url(https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 115%;
+        position: absolute;
+
+        animation: rotateEarth 5s linear infinite;
+    }
+
+    .moon-orbit{
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        
+        animation: rotateEarth 5s linear infinite;
+    }
+
+    .moon{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transform: translate(50px);
+
+        background-image: url(https://www.australiangeographic.com.au/wp-content/uploads/2024/09/Untitled-design-1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 215%;  
+        
+        animation: rotateEarth 5s linear infinite;
+    }
+
+
+    @keyframes rotateEarth {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+    @keyframes rotatemoon {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+</style>
+
+<body>
+
+    <h1>
+        Earth-Moon Rotating Demo by Using Animation
+    </h1>
+
+    <div class="orbit">
+
+        <div class="earth"></div>
+
+        <div class="moon-orbit">
+            <div class="moon">
+
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

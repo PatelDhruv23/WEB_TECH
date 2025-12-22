@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 1</title>
+</head>
+
+<style>
+
+    .box{
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        background-color: aqua;
+        animation-name: convertCircle;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 2;
+        animation-fill-mode: forwards;
+        /* animation: name duration timing-function iteration-count fill-mode */
+    }
+
+    @keyframes convertCircle {
+
+        from{
+            border-radius: 0%;
+        }
+        to{
+            border-radius: 100%;
+        }
+        
+    }
+
+</style>
+
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
