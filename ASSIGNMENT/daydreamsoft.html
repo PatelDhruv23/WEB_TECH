@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Monda", sans-serif;
+        font-weight: 800;
+        color: #0069b4;
+    }
+
+    #main-section{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #head-para{
+        width: 93%;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #head-para h1{
+        color: #003e6b;
+        font-size: 36px;
+    }
+    #head-para p{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    #head-para p strong{
+        font-size: 18px;
+        color: #003e6b;
+        font-weight: 800;
+    }
+
+    #parentbox{
+        display: grid;
+        grid-template-columns: repeat(6,225px);
+        gap: 20px;
+
+    }
+
+    .box{
+        height: 135px;
+        background-color: #EDF5FA;
+        border-radius: 8px;
+        transition: all 0.2s ease-in;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 16px;
+
+    }
+    .box:hover{
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+        transform: translateY(-8px);
+    }
+
+    .imgbox{
+        width: 50px;
+        height: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #imgbox1{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Ecommerce.png);
+    }
+    #imgbox2{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Business%20to%20Business.svg);
+    }
+    #imgbox3{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Non%20Profits.png);
+    }
+    #imgbox4{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Startup.svg);
+    }
+    #imgbox5{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Gaming%20&%20Leisure.svg);
+    }
+    #imgbox6{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Real%20Estate.png);
+    }
+    #imgbox7{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Food%20&%20Restaurants.svg);
+    }
+    #imgbox8{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Social%20Networking.svg);
+    }
+    #imgbox9{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Fintech.png);
+    }
+    #imgbox10{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Directory%20&%20Organisations.svg);
+    }
+    #imgbox11{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Sports.png);
+    }
+    #imgbox12{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Education.png);
+    }
+    #imgbox13{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Travel%20&%20Hospitality.png);
+    }
+    #imgbox14{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Media%20&%20Entertainment.png);
+    }
+    #imgbox15{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Healthcare.png);
+    }
+    #imgbox16{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Fitness%20&%20Wellness.png);
+    }
+    #imgbox17{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Transport%20&%20Logistics.png);
+    }
+    #imgbox18{
+        background-image: url(https://www.daydreamsoft.com/images/home/industries/light/Event%20&%20Tickets.svg);
+    }
+
+</style>
+
+<body>
+
+    <section id="main-section">
+
+        <div id="head-para">
+            <h1>
+                Industries We Specialize In
+            </h1>
+
+            <p>For over <strong>10 years</strong>, we have worked closely with <strong>1500+ clients all over the world</strong> diverse fields. Thus, we understand your industry's challenges and audience expectations, enabling us to quickly identify your needs and develop tailored solutions.</p>
+        </div>
+
+        <div id="parentbox">
+            <div class="box" id="box1">
+                <div class="imgbox" id="imgbox1">
+                </div>
+                Ecommerce & Retail
+            </div>
+            <div class="box" id="box2">
+                <div class="imgbox" id="imgbox2">
+                </div>
+                Business to Business
+            </div>
+            <div class="box" id="box3">
+                <div class="imgbox" id="imgbox3">
+                </div>
+                Nonprofits
+            </div>
+            <div class="box" id="box4">
+                <div class="imgbox" id="imgbox4">
+                </div>
+                Startups
+            </div>
+            <div class="box" id="box5">
+                <div class="imgbox" id="imgbox5">
+                </div>
+                Gaming & Leisure
+            </div>
+            <div class="box" id="box6">
+                <div class="imgbox" id="imgbox6">
+                </div>
+                Real Estate
+            </div>
+            <div class="box" id="box7">
+                <div class="imgbox" id="imgbox7">
+                </div>
+                Food & Restaurants
+            </div>
+            <div class="box" id="box8">
+                <div class="imgbox" id="imgbox8">
+                </div>
+                Social Networking
+            </div>
+            <div class="box" id="box9">
+                <div class="imgbox" id="imgbox9">
+                </div>
+                Fintech
+            </div>
+            <div class="box" id="box10">
+                <div class="imgbox" id="imgbox10">
+                </div>
+                Directory & Organisations
+            </div>
+            <div class="box" id="box11">
+                <div class="imgbox" id="imgbox11">
+                </div>
+                Sports
+            </div>
+            <div class="box" id="box12">
+                <div class="imgbox" id="imgbox12">
+                </div>
+                Education
+            </div>
+            <div class="box" id="box13">
+                <div class="imgbox" id="imgbox13">
+                </div>
+                Travel & Hospitality
+            </div>
+            <div class="box" id="box14">
+                <div class="imgbox" id="imgbox14">
+                </div>
+                Media & Entertainment
+            </div>
+            <div class="box" id="box15">
+                <div class="imgbox" id="imgbox15">
+                </div>
+                Healthcare
+            </div>
+            <div class="box" id="box16">
+                <div class="imgbox" id="imgbox16">
+                </div>
+                Fitness & Wellness
+            </div>
+            <div class="box" id="box17">
+                <div class="imgbox" id="imgbox17">
+                </div>
+                Transport & Logistics
+            </div>
+            <div class="box" id="box18">
+                <div class="imgbox" id="imgbox18">
+                </div>
+                Event & Tickets
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>

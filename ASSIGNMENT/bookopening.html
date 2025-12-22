@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .book-cover {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        perspective: 2700px;
+      }
+      .front-page {
+        width: 30%;
+        height: 80%;
+        background-image: url(https://m.media-amazon.com/images/I/81q77Q39nEL.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        transition: all 0.5s linear;
+        transform-origin: 0px 0px;
+        z-index: 2;
+      }
+      .back-page {
+        width: 30%;
+        height: 80%;
+        background-image: url(https://i.pinimg.com/736x/4a/75/80/4a75807ebcc889be59572a114b5d2b0d.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.5s linear;
+        transform-origin: 0px 0px;
+        position: absolute;
+        z-index: 1;
+      }
+      .front-page:hover {
+        transform: rotateY(-120deg);
+      }
+      .back-page:hover{
+        transform: rotateY(-120deg);
+      }
+
+      .secondpage{
+        width: 30%;
+        height: 80%;
+        background-image: url(https://i.pinimg.com/736x/43/f7/c2/43f7c2eb3ae52a9ce802c07cd91ba48b.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="book-cover">
+      <div class="front-page"></div>
+      <div class="back-page"></div>
+      <div class="secondpage"></div>
+    </div>
+  </body>
+</html>

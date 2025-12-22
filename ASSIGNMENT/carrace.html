@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Car Race</title>
+</head>
+
+<style>
+    .racetrack {
+        margin: auto;
+        width: 90%;
+        height: 100vh;
+        background-color: rgb(30, 29, 29);
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .racingpath {
+        width: 80%;
+        height: 80px;
+        border: 2px dashed white;
+        border-radius: 50px;
+        position: relative;
+    }
+
+    h2{
+        position: absolute;
+        top: -50px;
+        left: 10px;
+        color: white;
+    }
+
+    img{
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        width: 70px;
+        border-radius: 50%;
+        animation: driveCars 20s forwards;
+    }
+
+    @keyframes driveCars{
+        from{
+            left: 10px;
+        }
+        to{
+            left: calc(90% - 10px)
+        }
+    }
+
+    #car1{
+        animation-timing-function: linear;
+    }
+    #car2{
+        animation-timing-function: ease;
+    }
+    #car3{
+        animation-timing-function: ease-in;
+    }
+    #car4{
+        animation-timing-function: ease-out;
+    }
+    #car5{
+        animation-timing-function: ease-in-out;
+    }
+
+
+</style>
+
+<body>
+
+    <h1>F1 Car Racing</h1>
+
+    <div class="racetrack">
+        <div class="racingpath">
+            <h2>linear: constant speed</h2>
+            <img id="car1" src="/HTML/assets/cars_task/car1.jpg" alt="">
+        </div>
+
+        <div class="racingpath">
+            <h2>ease: slow start - mid fast - slow end</h2>
+            <img id="car2" src="/HTML/assets/cars_task/car2.jpg" alt="">
+        </div>
+
+        <div class="racingpath">
+            <h2>ease-in: slow start - fastend</h2>
+            <img id="car3" src="/HTML/assets/cars_task/car3.jpg" alt="">
+        </div>
+
+        <div class="racingpath">
+            <h2>ease-out: fast start - slow end</h2>
+            <img id="car4" src="/HTML/assets/cars_task/car5.jpg" alt="">
+        </div>
+
+        <div class="racingpath">
+            <h2>ease-in-out: slow start - mid fast - slow end</h2>
+            <img  id="car5" src="/HTML/assets/cars_task/car6.jpg" alt="">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
