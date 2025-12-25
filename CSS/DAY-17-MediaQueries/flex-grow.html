@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow</title>
+</head>
+
+<style>
+
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body{
+        background-color: black;
+    }
+
+    h1{
+        font-size: 40px;
+        margin: 30px;
+        color: white;
+        text-align: center;
+    }
+
+    .parent{
+        width: 90%;
+        height: 80vh;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .child{
+        width: 10%;
+        height: 90%;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.5s linear;
+        overflow: hidden;
+    }
+
+    .child h2{
+        color: black;
+        margin-top: 10px;
+        text-align: center;
+        font-weight: 600;
+        transform: translateY(-100px);
+        transition: all 0.5s linear;
+    }
+
+
+
+    .child:hover{
+        flex-grow: 0.5;
+        h2{
+            transform: translateY(0px);
+            
+        }
+
+    }
+
+    .child:nth-child(1){
+        background-image: url(/HTML/assets/ODI_WC_23/hardik.jpg);
+    }
+    .child:nth-child(2){
+        background-image: url(/HTML/assets/ODI_WC_23/bumrah.jpg);
+    }
+    .child:nth-child(3){
+        background-image: url(/HTML/assets/ODI_WC_23/kohli.jpg);
+    }
+    .child:nth-child(4){
+        background-image: url(/HTML/assets/ODI_WC_23/rohit.jpg);
+    }
+    .child:nth-child(5){
+        background-image: url(/HTML/assets/ODI_WC_23/shami.jpg);
+    }
+
+</style>
+
+<body>
+
+    <h1>Stars of India</h1>
+    <div class="parent">
+        <div class="child">
+            <h2>Hardik</h2>
+        </div>
+        <div class="child">
+            <h2>Bumrah</h2>
+        </div>
+        <div class="child">
+            <h2>Kohli</h2>
+        </div>
+        <div class="child">
+            <h2>Rohit</h2>
+        </div>
+        <div class="child">
+            <h2>Shami</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Task</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: rgb(45, 43, 43);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main{
+        width: 50%;
+        height: 90vh;
+        margin: 50px auto;
+        padding: 10px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-section{
+        width: 240%;
+        height: 100%;
+        margin: 50px auto;
+        background-color: rgb(33, 31, 31);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .box{
+        width: 250px;
+        height: 250px;
+        margin: 20px 20px 20px 20px;
+        border-radius: 8px;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.1s linear;
+    }
+
+    .box:hover{
+        transform: scale(1.05);
+        box-shadow: rgba(115, 111, 158, 0.172) 0px 10px 36px 0px, rgba(84, 74, 190, 0.172) 0px 0px 0px 1px;
+    }
+
+    #box1{
+        background-image: url(https://i.pinimg.com/736x/e7/b0/d0/e7b0d02912ec6741306e6cbb553c4e1c.jpg);
+    }
+    #box2{
+        background-image: url(https://i.pinimg.com/736x/c5/60/cb/c560cb0baf6eebfbc4c367674f2ef8a7.jpg);
+    }
+    #box3{
+        background-image: url(https://i.pinimg.com/736x/08/11/43/081143257ab8d3c1020291cd519e8465.jpg);
+    }
+    #box4{
+        background-image: url(https://i.pinimg.com/736x/ee/48/e6/ee48e66af9538bc5644d07072c6db609.jpg);
+    }
+    #box5{
+        background-image: url(https://i.pinimg.com/736x/ab/d1/e8/abd1e86337b235c7d2d8b7ff517807ec.jpg);
+    }
+    #box6{
+        background-image: url(https://i.pinimg.com/1200x/5c/56/32/5c563274dc0d04985d23f7d4ac0905ed.jpg);
+    }
+    #box7{
+        background-image: url(https://i.pinimg.com/1200x/43/e7/ad/43e7ad2d2f6c4422edf14d12612148c0.jpg);
+    }
+    #box8{
+        background-image: url(https://i.pinimg.com/1200x/2c/3e/de/2c3edee21ec68987ce6cf2089e9f2551.jpg);
+    }
+    #box9{
+        background-image: url(https://i.pinimg.com/736x/66/17/19/661719d0dbf4c21d7ebecd66266d4d71.jpg);
+    }
+    #box10{
+        background-image: url(https://i.pinimg.com/736x/4b/ab/0a/4bab0a5b0e7629a677b01f5342018e40.jpg);
+    }
+
+
+
+
+</style>
+
+<body>
+
+    <section id="main">
+        <section id="main-section">
+
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+            <div class="box" id="box10"></div>
+
+        </section>
+    </section>
+    
+</body>
+</html>
