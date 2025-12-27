@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Variable In CSS</title>
+</head>
+
+<style>
+
+    :root{
+        --headcolor: white;
+        --maincolor: brown;
+        --footcolor: white;
+
+        --textsize: 20px;
+        --headsize: 40px;
+        --textcolor: black;
+
+        --bordercolor: black;
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    header{
+        width: 100%;
+        height: 72px;
+        background-color: var(--headcolor);
+        color: var(--textcolor);
+        font-size: var(--headsize);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        width: 100%;
+        height: 550px;
+        background-color: var(--maincolor);
+        color: var(--textcolor);
+        font-size: var(--textsize);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        width: 100%;
+        height: calc(100vh - 622px);
+        background-color: var(--footcolor);
+        color: var(--textcolor);
+        font-size: var(--textsize);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+</style>
+
+<body>
+
+    <section>
+        <header>This is the Heading</header>
+        <main>This is main body</main>
+        <footer>@Copyright 2025. All Rights Reserved to Ownwer!</footer>
+    </section>
+    
+</body>
+</html>

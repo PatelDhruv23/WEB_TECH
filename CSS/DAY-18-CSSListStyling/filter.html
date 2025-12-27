@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Property</title>
+</head>
+
+<style>
+
+    img{
+        width: 100px;
+        margin: 30px;
+        filter: grayscale(100%);
+    }
+
+    img:hover{
+        filter: grayscale(0%) drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+    }
+
+</style>
+
+<body>
+    
+    <div class="parent">
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/1998/1998627.png"
+        alt=""
+      />
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/1864/1864514.png"
+        alt=""
+      />
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/1864/1864480.png"
+        alt=""
+      />
+    </div>
+    
+</body>
+</html>

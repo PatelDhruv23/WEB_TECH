@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 350px;
+        border: 1px solid gray;
+        margin: 25px;
+      }
+      #box1 {
+        background-image: url(https://i.pinimg.com/736x/c5/60/cb/c560cb0baf6eebfbc4c367674f2ef8a7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      img{
+        width: 400px;
+        height: 350px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Using Background Image property</h2>
+    <div class="box" id="box1"></div>
+
+    <h2>Using Img tag within Div and object-fit property: cover</h2>
+    <div class="box" id="box2">
+        <img src="https://i.pinimg.com/736x/c5/60/cb/c560cb0baf6eebfbc4c367674f2ef8a7.jpg" alt="">
+    </div>
+  </body>
+</html>
