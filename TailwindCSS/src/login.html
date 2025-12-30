@@ -1,19 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logn In</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Logn In</title>
+        <link rel="stylesheet" href="output.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <section class="w-full h-screen flex justify-center items-center">
+            <article
+                class="w-[80%] h-[80%] rounded-lg flex shadow-2xl shadow-gray-400"
+            >
+                <aside
+                    class="w-[50%] h-full rounded-lg flex justify-center items-center"
+                >
+                    <img src="./assets/workspace.png" alt="" class="w-[70%]" />
+                </aside>
+                <aside
+                    class="w-[50%] h-full bg-blue-600 rounded-r-lg flex justify-center items-center"
+                >
+                    <div class="w-[50%] h-[60%] bg-white rounded-lg p-10 pt-5">
+                        <h1 class="text-2xl font-bold my-2">Hello!!</h1>
 
-    <section class="w-full h-screen flex justify-center items-center ">
-        <article class="w-[80%] h-[80%] border rounded-lg flex">
-            <aside class="w-[50%] h-full rounded-lg"></aside>
-            <aside class="w-[50%] h-full bg-blue-600 rounded-r-lg"></aside>
-        </article>
-    </section>
-    
-</body>
+                        <p class="text-gray-700">Sign up to get started</p>
+
+                        <form>
+                            <div class="my-3 relative">
+                                <input
+                                    type="email"
+                                    class="w-full h-10 rounded-full border border-gray-400 pl-8"
+                                    placeholder="Enter Email"
+                                />
+                                <span class="absolute top-2.5 left-2"
+                                    ><i
+                                        class="fa-regular fa-envelope text-gray-500"
+                                    ></i
+                                ></span>
+                            </div>
+
+                            <div class="my-3 relative">
+                                <input
+                                    type="password"
+                                    class="w-full h-10 rounded-full border border-gray-400 pl-8"
+                                    placeholder="Enter Password"
+                                />
+                                <span class="absolute top-2 left-2"
+                                    ><i
+                                        class="fa-solid fa-lock text-gray-500"
+                                    ></i
+                                ></span>
+                            </div>
+
+                            <div class="my-3">
+                                <button
+                                    class="w-full h-10 bg-blue-600 rounded-full text-white font-semibold hover:bg-blue-700 hover:scale-105 transition-all duration-150 ease-linear"
+                                >
+                                    Sign Up
+                                </button>
+                            </div>
+                        </form>
+
+                        <a
+                            href=""
+                            class="text-gray-600 hover:text-blue-500 hover:underline transition-all duration-100 ease-in ml-2"
+                            >Forget Password?</a
+                        >
+                    </div>
+                </aside>
+            </article>
+        </section>
+    </body>
 </html>
