@@ -29,3 +29,23 @@ console.log(result);
 console.log(null + 10);
 console.log(null + undefined);
 console.log(null + "hello");
+
+//! Nullish Coleascing Operator
+//* The Nullish Coleacing Operator is used to provide the default value only when the value is null or undefined.
+
+//* It is represented by the ??
+
+//* If the value is valid value then default value will not be executed.
+
+let age = 20;
+
+let userAge = age ?? "User Value is False";
+console.log(userAge);
+
+function greetUser(userName) {
+    let greeting = userName ?? "Guest!";
+    console.log(`Hello from ${greeting}`);
+}
+
+greetUser()
+greetUser("Dhruv")
