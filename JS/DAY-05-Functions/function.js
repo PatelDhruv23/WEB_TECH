@@ -122,10 +122,10 @@ getNumbers(10,20,30);
 //* The IIFE stands for Immediate Invoking Function Expression.
 //* The IIFE function executes only once.
 
-(function () {
+/* (function () {
     alert("Hello")
 })();
-
+ */
 
 //! 5. Arrow Function:
 //* The arrow function is shorthand syntax to create function in JS.
@@ -139,3 +139,67 @@ let add = (num1, num2) => {
 console.log(add);
 add(10, 20);
 console.log(add(30, 50));
+
+
+//~ NOTE: Arrow Function don't have their arguments object.
+function getNumbers(){
+    console.log(arguments);
+}
+getNumbers(10,20,30)
+
+/* let num = ()=>{
+    console.log(arguments);
+} */
+/* num(10,20,30) */ //Error
+
+
+
+    //! Implicit Return
+    //? Implicit return means of only one statement is present inside your function there is no need to mention curly brackets as well as return keyword.
+
+    //? You can omit the {} and return keyword.
+
+    let addition = (num1, num2) => num1+num2;
+    //Internally is is converted like this:
+    // let add = (num1, num2) => {return num1 + num2}
+
+    console.log(addition(10,20));
+
+    //! Explicit Return:
+    //* If there are multiple statements is present inside the given function then you have to mention manually curly brackets and return keyword.
+
+    //* If you are mentioning the return keyword manually then you have to must use the curly brackets.
+
+    let explicitFun = () => {
+        console.log("First Statements");
+        console.log("Second Statements");
+        return "2 statements are present inside the function";
+    };
+
+    console.log(explicitFun());
+
+
+
+//! 6. callback Function:
+//* The function is passed to another function as an argument is called as callback function.
+
+function orderFood(waiter){
+    console.log(`👨‍🍳: Sir What you want?
+        1. Chai
+        2. Coffee`);
+    waiter()
+}
+
+/* orderFood(serveFood);
+orderFood(reviewFood); */
+
+function serveFood(){
+    console.log("Enjoy Your Food 🍴");
+}
+
+function reviewFood(){
+    console.log("It was an delicious food 💌");
+}
+
+document.getElementById("orderServe").addEventListener("click", function() {orderFood(serveFood)});
+document.getElementById("orderReview").addEventListener("click", () => {orderFood(reviewFood)});
