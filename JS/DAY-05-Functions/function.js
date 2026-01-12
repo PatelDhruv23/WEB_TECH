@@ -155,9 +155,9 @@ getNumbers(10,20,30)
 
 
     //! Implicit Return
-    //? Implicit return means of only one statement is present inside your function there is no need to mention curly brackets as well as return keyword.
+    //* Implicit return means of only one statement is present inside your function there is no need to mention curly brackets as well as return keyword.
 
-    //? You can omit the {} and return keyword.
+    //* You can omit the {} and return keyword.
 
     let addition = (num1, num2) => num1+num2;
     //Internally is is converted like this:
@@ -183,17 +183,17 @@ getNumbers(10,20,30)
 //! 6. callback Function:
 //* The function is passed to another function as an argument is called as callback function.
 
-function orderFood(waiter){
+/* function orderFood(waiter){
     console.log(`👨‍🍳: Sir What you want?
         1. Chai
         2. Coffee`);
     waiter()
 }
 
-/* orderFood(serveFood);
-orderFood(reviewFood); */
+orderFood(serveFood);
+orderFood(reviewFood); 
 
-function serveFood(){
+/* function serveFood(){
     console.log("Enjoy Your Food 🍴");
 }
 
@@ -202,4 +202,40 @@ function reviewFood(){
 }
 
 document.getElementById("orderServe").addEventListener("click", function() {orderFood(serveFood)});
-document.getElementById("orderReview").addEventListener("click", () => {orderFood(reviewFood)});
+document.getElementById("orderReview").addEventListener("click", () => {orderFood(reviewFood)});  */
+
+
+//! Example of callback function:
+//? 1st way to create a callback function:
+//~ We will create the seperate/another function and pass it as a reference to the main function.
+
+function sir(studentName, callback){
+    console.log("Sir, is checking papers!");
+    setTimeout(()=>{
+        console.log("Papers checked");
+        console.log(`Result for ${studentName}:`);
+        callback();
+    }, 3000)
+}
+
+//~ Callback Function
+function result(){
+    console.log("PASS.");
+}
+
+sir("John",result);
+
+//? 2nd way: Directly mention the callback function inside the main function FCS.
+
+function orderFood(callback){
+    console.log("Food Is Ordered");
+    callback();
+}
+
+orderFood(function () {
+    console.log("Smit is your delivery Boy!");
+});
+
+orderFood(()=>{
+    console.log("Dhruv is your delivery Boy!");
+})
