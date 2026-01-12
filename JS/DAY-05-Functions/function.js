@@ -60,9 +60,9 @@
 //? 4. IIFE
 //? 5. Arrow Function (Fat Arrow Function)
 //? 6. Callback Function
-//? 7. Recursive Function
-//? 8. Async Function
-//? 9. Constructor Function
+//? 7. Nested Functuion
+//? 8. HOF Function
+//? 9. Closure Function
 //? 10. Generator Function
 //? 11. Function Currying
 
@@ -232,6 +232,7 @@ function orderFood(callback){
     callback();
 }
 
+//~ Here orderFood is a HOF
 orderFood(function () {
     console.log("Smit is your delivery Boy!");
 });
@@ -239,3 +240,73 @@ orderFood(function () {
 orderFood(()=>{
     console.log("Dhruv is your delivery Boy!");
 })
+
+//! 7. HOF: Higher Order Function
+//* A function which will accept another function as a argument or it will return another function is called as Higher-Order Function.
+
+//^ example:
+
+//HOF
+function calculate(num1, num2, operation){
+    return operation(num1,num2);
+}
+
+//callback functions
+function addi(num1, num2){
+    return num1 + num2;
+}
+function sub(num1, num2){
+    return num2 - num1; 
+}
+function mul(num1, num2){
+    return num1 * num2; 
+}
+function div(num1, num2){
+    return num2 / num1; 
+}
+
+//FCS
+console.log(calculate(10,30,addi));
+console.log(calculate(10,30,sub));
+console.log(calculate(10,30,mul));
+console.log(calculate(10,30,div));
+
+
+//! 8. Nested Functions:
+//* The function is prresent inside another function is known as Nested Function.
+
+function outer(){
+    console.log("This is Outer Function");
+    let outerVar = 10;
+
+    function inner(){
+        console.log("This is Inner Function");
+        console.log(outerVar);
+    }
+    inner();
+}
+
+outer();
+
+//! 9. Outer Function:
+//* If you are trying to access the outer function variables or data inside the inner function that time it will create the cllosure by the other function.
+//? Here, closure means remembering the value of outer function inside the inner function.
+
+//! 10. Generator Function:
+//* The Generator function is a special type of function which will pause and resume its execution.
+//? yield -> pause the execution and store the value.
+//? .next() -> resume the execution and again pause it.
+
+//? Syntax: function* identifier()
+
+function* netflixSeries(){
+    yield "Episode-1";
+    yield "Episode-2";
+    yield "Episode-3";
+}
+
+let episode = netflixSeries();
+console.log(episode.next());
+console.log(episode.next());
+console.log(episode.next());
+console.log(episode.next());
