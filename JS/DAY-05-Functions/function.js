@@ -125,7 +125,7 @@ getNumbers(10,20,30);
 /* (function () {
     alert("Hello")
 })();
- */
+*/
 
 //! 5. Arrow Function:
 //* The arrow function is shorthand syntax to create function in JS.
@@ -289,7 +289,7 @@ function outer(){
 outer();
 
 //! 9. Outer Function:
-//* If you are trying to access the outer function variables or data inside the inner function that time it will create the cllosure by the other function.
+//* If you are trying to access the outer function variables or data inside the inner function that time it will create the closure by the other function.
 //? Here, closure means remembering the value of outer function inside the inner function.
 
 //! 10. Generator Function:
