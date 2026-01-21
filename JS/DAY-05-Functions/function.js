@@ -285,7 +285,6 @@ function outer(){
     }
     inner();
 }
-
 outer();
 
 //! 9. Outer Function:
