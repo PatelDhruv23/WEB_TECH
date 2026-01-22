@@ -126,3 +126,55 @@ let personalCare = products.filter((product) => {
 })
 
 console.log(personalCare)
+
+//! 3. reduce():
+//* The reduce() method is used tto convert all the array elements into the single value or output.
+//? Syntax: arr.reduce((acc, cValue, cIndex, cArray) => {})
+//? Return Type: Single Value
+
+let values = [11,20,31,41,50];
+
+let sum = values.reduce((acc, cValue, cIndex, cArray) => {
+
+  console.log("acc:", acc, "cValue:", cValue, "cIndex:", cIndex);
+
+  if (cValue % 2 == 0){
+    return acc + cValue
+  }
+  return acc
+
+},0)
+
+console.log(sum);
+
+let cart = [
+  {name: "mobile", price: 25000, qty: 2},
+  {name: "watch", price: 5000, qty: 2},
+  {name: "earbuds", price: 2000, qty: 3},
+]
+
+let total = cart.reduce((acc,cValue)=>{
+
+  return acc + (cValue.price*cValue.qty);
+
+},0)
+
+let subtotal = (total - (total*0.10))
+
+console.log("Total Amount: ",total);
+console.log("Discount: ",total*0.10);
+console.log("SubTotal: ",subtotal);
+
+//! 4. forEach():
+//* forEach() method is used to iterate on each element of an array but it will 
+//? Syntax: arr.forEach((cValue, cIndex, cArray)=>{})
+//? Return Type: undefined
+
+let updatedValues = values.forEach((num)=>{
+  return num + 10;
+})
+console.log(updatedValues);
+
+//! Key difference: map() and forEach()
+//~ The map() method will return a new array, but forEach() will not return anything.
+//~ It is just used for iterating purpose.
