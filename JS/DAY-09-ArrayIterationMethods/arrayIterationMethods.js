@@ -128,7 +128,7 @@ let personalCare = products.filter((product) => {
 console.log(personalCare)
 
 //! 3. reduce():
-//* The reduce() method is used tto convert all the array elements into the single value or output.
+//* The reduce() method is used to convert all the array elements into the single value or output.
 //? Syntax: arr.reduce((acc, cValue, cIndex, cArray) => {})
 //? Return Type: Single Value
 
