@@ -1,4 +1,3 @@
-
 console.log("DOM in JS");
 
 //! What is DOM?
@@ -87,7 +86,3 @@ console.log(box.childNodes); // NodeList(7) [text, h1, text, p, text, span, tex
 //? The children returns only HTML nodes(HTML Elements Only).
 //? It ignores the text, attribute, and comment node.
 console.log(box.children); // HTMLCollection(3) [h1, p, span]
-
-
-
-
