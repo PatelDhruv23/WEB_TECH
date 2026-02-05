@@ -52,7 +52,6 @@ function notify(){
             console.log(e.target);
             console.log(e.target.name);
         })
-
     })
 
 //! 2. Form Events:
@@ -72,5 +71,13 @@ function notify(){
 
 //! Difference Between Change and Input:
 
+let username = document.getElementById("username");
+let country = document.getElementById("country");
 
+username.addEventListener("input", (e) => {
+  document.getElementById("output").innerText = username.value;
+});
 
+country.addEventListener("change", (e) => {
+  document.getElementById("output2").innerText = country.value;
+});
